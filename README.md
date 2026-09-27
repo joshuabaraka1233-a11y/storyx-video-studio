@@ -1,13 +1,23 @@
 # StoryX Video Studio
 
-Standalone long-form AI video generation studio starter. No Lovable dependency.
+Standalone long-form AI video generation studio. No Lovable dependency.
 
-## Run
+Current foundation:
+- 1–60 minute video projects
+- scene-based long-form architecture
+- 2 free generations
+- credit packages
+- development checkout endpoint
+- project creation API
+- Next.js 16 configuration
+
+Run:
 npm install
 npm run dev
 
-## Architecture
-The UI is designed around a scene-based pipeline so videos can scale to 60 minutes:
-idea -> script -> scene plan -> visuals -> voice -> music/SFX -> timeline -> render -> MP4.
-
-The current build includes a polished dashboard and project creation flow. AI provider adapters, authentication, database persistence, background render workers, storage, billing/credits, and real video generation are the next integration layer.
+Production work still required:
+- real user accounts and server-side credit balances
+- real payment confirmation
+- AI script/visual/voice providers
+- background render workers and object storage
+- FFmpeg rendering pipeline
